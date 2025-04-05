@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MariamApp</name>
+    </assembly>
+    <members>
+        <member name="M:MariamApp.Controllers.CategoryController.GetCategories">
+            <summary>
+            Get all categories.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.CategoryController.GetCategoryById(System.Int32)">
+            <summary>
+            Get category by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.CategoryController.AddCategory(MariamApp.DTOs.Categories.CategoryRequest)">
+            <summary>
+            Create a new category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.CategoryController.UpdateCategory(System.Int32,MariamApp.DTOs.Categories.CategoryRequest)">
+            <summary>
+            Update an existing category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.CategoryController.DeleteCategory(System.Int32)">
+            <summary>
+            Delete a category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.GetProducts">
+            <summary>
+            Get all products.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.GetProductById(System.Int32)">
+            <summary>
+            Get product by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.AddProduct(MariamApp.DTOs.Products.ProductRequest)">
+            <summary>
+            Create a new product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.UpdateProduct(System.Int32,MariamApp.DTOs.Products.ProductRequest)">
+            <summary>
+            Update an existing product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete a product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ProductController.UpdateStock(System.Int32,System.Int32)">
+            <summary>
+            Update stock for purchase or sale.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportSalesReport">
+            <summary>
+            Generate Sales report as csv.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportPurchaseReport">
+            <summary>
+            Generate Purchases report as csv.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportStockReport">
+            <summary>
+            Generate Stock status report as csv.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportSalesReportPdf">
+            <summary>
+            Generate Sales report as pdf.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportPurchaseReportPdf">
+            <summary>
+            Generate Purchases report as pdf.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.ReportsController.ExportStockReportPdf">
+            <summary>
+            Generate Stock status report as pdf.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.SupplierController.GetSuppliers">
+            <summary>
+            Get all suppliers.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.SupplierController.GetSupplierById(System.Int32)">
+            <summary>
+            Get supplier by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.SupplierController.AddSupplier(MariamApp.DTOs.Suppliers.SupplierRequest)">
+            <summary>
+            Create a new supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.SupplierController.UpdateSupplier(System.Int32,MariamApp.DTOs.Suppliers.SupplierRequest)">
+            <summary>
+            Update an existing supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.SupplierController.DeleteSupplier(System.Int32)">
+            <summary>
+            Delete a supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.TransactionController.RecordPurchase(MariamApp.RequestModels.TransactionRequest)">
+            <summary>
+            Record a purchase transaction (increase stock).
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.TransactionController.RecordSale(MariamApp.RequestModels.TransactionRequest)">
+            <summary>
+            Record a sale transaction (decrease stock).
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.TransactionController.GetTransactions">
+            <summary>
+            Get all transactions.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.TransactionController.GetTransactionsByProductId(System.Int32)">
+            <summary>
+            Get transactions for a specific product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Controllers.TransactionController.GetTransactionById(System.Int32)">
+            <summary>
+            Get transaction by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.CategoryService.GetCategoriesAsync">
+            <summary>
+            Get all categories.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.CategoryService.GetCategoryByIdAsync(System.Int32)">
+            <summary>
+            Get a category by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.CategoryService.AddCategoryAsync(MariamApp.Data.Entities.Category)">
+            <summary>
+            Add a new category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.CategoryService.UpdateCategoryAsync(System.Int32,MariamApp.Data.Entities.Category)">
+            <summary>
+            Update an existing category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.CategoryService.DeleteCategoryAsync(System.Int32)">
+            <summary>
+            Delete a category.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.GetProductsAsync">
+            <summary>
+            Get all products.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.GetProductByIdAsync(System.Int32)">
+            <summary>
+            Get a product by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.AddProductAsync(MariamApp.Data.Entities.Product)">
+            <summary>
+            Add a new product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.UpdateProductAsync(System.Int32,MariamApp.Data.Entities.Product)">
+            <summary>
+            Update an existing product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.DeleteProductAsync(System.Int32)">
+            <summary>
+            Delete a product.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.ProductService.UpdateStockAsync(System.Int32,System.Int32)">
+            <summary>
+            Update stock for purchase or sale.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.SupplierService.GetSuppliersAsync">
+            <summary>
+            Get all suppliers.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.SupplierService.GetSupplierByIdAsync(System.Int32)">
+            <summary>
+            Get a supplier by ID.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.SupplierService.AddSupplierAsync(MariamApp.Data.Entities.Supplier)">
+            <summary>
+            Add a new supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.SupplierService.UpdateSupplierAsync(System.Int32,MariamApp.Data.Entities.Supplier)">
+            <summary>
+            Update an existing supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.SupplierService.DeleteSupplierAsync(System.Int32)">
+            <summary>
+            Delete a supplier.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.TransactionService.RecordPurchaseAsync(System.Int32,System.Int32)">
+            <summary>
+            Record a purchase transaction (increase stock).
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.TransactionService.RecordSaleAsync(System.Int32,System.Int32)">
+            <summary>
+            Record a sale transaction (decrease stock).
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.TransactionService.GetTransactionsAsync">
+            <summary>
+            Get all transactions.
+            </summary>
+        </member>
+        <member name="M:MariamApp.Services.TransactionService.GetTransactionsByProductIdAsync(System.Int32)">
+            <summary>
+            Get transactions for a specific product.
+            </summary>
+        </member>
+    </members>
+</doc>
