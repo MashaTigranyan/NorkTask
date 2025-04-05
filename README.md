@@ -64,6 +64,12 @@ In the project, only Administrator users are allowed to use delete endpoints and
 ### Usage of SignalR
 For testing SignalR need to open this URLs.
 1. **http://localhost:5210/src/reports/index.html**
+
 In this page you can see messages when your file is ready for download.
+A message will only be sent to the user who wants to download the file.
+To enable this, after logging into Swagger, you need to insert the token into the HTML page form.
+If you insert an incorrect token, the connection will not be established.
 2. **http://localhost:5210/src/stock/index.html**
+
 In this page you can see stock state after any transaction.
+In this case, the message will be sent to all users.
